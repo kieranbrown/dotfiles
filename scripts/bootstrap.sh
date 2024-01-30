@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # todo: move this into a linux-pre-bootstrap.sh
+sudo apt-get update
+sudo apt-get upgrade -y
 sudo apt-get install build-essential
 
 if [[ $(command -v brew) == "" ]]; then
