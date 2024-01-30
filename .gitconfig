@@ -1,0 +1,9 @@
+[user]
+	name = Kieran Brown
+	email = kieran.brown@chatloop.com
+[init]
+	templateDir = ~/.git-template
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
