@@ -72,7 +72,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(aws brew common-aliases composer docker docker-compose git gpg-agent kubectl kubectx npm nvm sudo zsh-autosuggestions zsh-interactive-cd)
 
-export NVM_LAZY=1 NVM_HOMEBREW=$(brew --prefix nvm)
+export NVM_LAZY=1 NVM_HOMEBREW=${HOMEBREW_PREFIX}
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

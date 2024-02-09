@@ -1,0 +1,33 @@
+cask "alfred"
+cask "amazon-chime"
+cask "arc"
+# cask "discord" # commented out as this will conflict with Vencord
+cask "gitkraken"
+cask "google-chrome", force: true
+cask "hoppscotch"
+cask "logi-options-plus"
+cask "meetingbar"
+cask "microsoft-teams", force: true
+cask "notion"
+cask "obsidian"
+# cask "plex"
+cask "slack", force: true
+# cask "spotify" # disabled to keep the premium patch
+# cask "stremio"
+cask "tableplus"
+cask "visual-studio-code"
+cask "warp"
+cask "zoom"
+
+# Docker (For WSL, use the WSL integration in Docker Desktop)
+cask "docker"
+cask "docker-compose"
+brew "docker-credential-helper-ecr"
+
+# Microsoft Office
+cask "microsoft-excel", force: true
+cask "microsoft-outlook", force: true
+cask "microsoft-powerpoint", force: true
+cask "microsoft-word", force: true
+
+brew "pinentry-mac"
