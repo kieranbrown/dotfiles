@@ -31,3 +31,4 @@ cask "microsoft-powerpoint", force: true
 cask "microsoft-word", force: true
 
 brew "pinentry-mac"
+brew "telnet"

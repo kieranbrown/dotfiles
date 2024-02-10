@@ -2,7 +2,7 @@
 set -e
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-DOTFILES_DIR=${SCRIPT_DIR}/../
+DOTFILES_DIR=$(realpath "${SCRIPT_DIR}/../")
 
 case "$(uname -sr)" in
 
@@ -56,7 +56,7 @@ if [[ ! -f "${HOMEBREW_PREFIX}/etc/brew-wrap" ]]; then
 fi
 
 source "${HOMEBREW_PREFIX}/etc/brew-wrap"
-brew set_repo kieranbrown/dotfiles
+brew set_repo -r "${DOTFILES_DIR}" -y
 
 for filename in .gitconfig .hushlogin .vimrc .zshrc; do
   echo "Symlinking ${filename}"
