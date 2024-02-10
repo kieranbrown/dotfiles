@@ -1,5 +1,15 @@
 {
   "files.associations": {
-    "Brewfile*": "ruby"
-  }
+    "Brewfile*": "ruby",
+    ".gitconfig*": "properties"
+  },
+  "vsicons.associations.files": [
+    {
+      "extensions": [
+        ".gitconfig.chatloop" // todo: .gitconfig*
+      ],
+      "filename": true,
+      "icon": "git"
+    }
+  ]
 }

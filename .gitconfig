@@ -1,9 +1,11 @@
 [user]
-	name = Kieran Brown
-	email = kieran.brown@chatloop.com
+  name = Kieran Brown
+  email = kswb96@gmail.com
 [init]
-	templateDir = ~/.git-template
+  templateDir = ~/.git-template
 [commit]
-	gpgsign = false # todo: set to true
+  gpgsign = false # todo: set to true
 [push]
-	autoSetupRemote = true
+  autoSetupRemote = true
+[includeIf "gitdir:~/Code/github.com/chatloop"]
+  path = .gitconfig.chatloop

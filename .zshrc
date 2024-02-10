@@ -106,8 +106,6 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias watch="watch "
 
-source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 if [ -f "${HOMEBREW_PREFIX}/etc/brew-wrap" ]; then
   source "${HOMEBREW_PREFIX}/etc/brew-wrap"
 fi

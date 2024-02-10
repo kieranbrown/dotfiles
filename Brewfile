@@ -59,6 +59,5 @@ brew "tgenv"
 brew "m1-terraform-provider-helper"
 brew "trivy"
 
-file ~/Code/github.com/chatloop/library/Brewfile
 file ./Brewfile.$PLATFORM
 main ./Brewfile.$HOSTNAME

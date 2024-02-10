@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-set -e
+set -euxo pipefail
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 DOTFILES_DIR=$(realpath "${SCRIPT_DIR}/../")
+export SCRIPT_DIR DOTFILES_DIR
+
+"${SCRIPT_DIR}/symlink-files.sh"
 
 case "$(uname -sr)" in
 
@@ -55,20 +58,12 @@ if [[ ! -f "${HOMEBREW_PREFIX}/etc/brew-wrap" ]]; then
   brew install rcmdnk/file/brew-file
 fi
 
-source "${HOMEBREW_PREFIX}/etc/brew-wrap"
+set +eu;
+source ${HOMEBREW_PREFIX}/etc/brew-wrap
 brew set_repo -r "${DOTFILES_DIR}" -y
+brew file update
+set -eu
 
-for filename in .gitconfig .hushlogin .vimrc .zshrc; do
-  echo "Symlinking ${filename}"
-  rm -f "${HOME}/${filename}"
-  ln -s "${DOTFILES_DIR}/${filename}" "${HOME}/${filename}"
-done
-
-echo "Symlinking Brewfile"
-CUSTOM_BREWFILE="${DOTFILES_DIR}/Brewfile.$(uname -n)"
-
-touch "${CUSTOM_BREWFILE}"
-rm -f "${HOME}/.Brewfile"
-ln -s "${CUSTOM_BREWFILE}" "${HOME}/.Brewfile"
-
-$ZSH_PATH
+if [[ ! -d "${HOME}/.git-template" ]]; then
+  pre-commit init-templatedir -t commit-msg -t pre-commit ${HOME}/.git-template
+fi
