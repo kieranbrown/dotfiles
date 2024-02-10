@@ -1,6 +1,7 @@
 tap "dashlane/tap"
 tap "homebrew/cask-fonts"
 tap "kreuzwerker/taps"
+tap "rcmdnk/file"
 
 # AWS
 brew "awscli"
@@ -22,6 +23,7 @@ brew "pre-commit"
 # Misc
 brew "base64"
 brew "bash"
+brew "brew-file"
 brew "coreutils"
 brew "dashlane-cli"
 brew "fzf"
