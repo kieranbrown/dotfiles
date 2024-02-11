@@ -139,4 +139,4 @@ tap 'kreuzwerker/taps'
 tap 'rcmdnk/file'
 
 # Additional files
-#file 'Brewfile.all'
+file 'Brewfile.all'
