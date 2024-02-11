@@ -1,5 +1,7 @@
 
-# Other Homebrew packages
+# tap repositories and their packages
+
+tap 'homebrew/core'
 brew 'acl'
 brew 'aom'
 brew 'apr'
@@ -128,4 +130,13 @@ brew 'webp'
 brew 'xz'
 brew 'zstd'
 
-file 'Brewfile.all'
+tap 'homebrew/cask-fonts'
+
+tap 'dashlane/tap'
+
+tap 'kreuzwerker/taps'
+
+tap 'rcmdnk/file'
+
+# Additional files
+#file 'Brewfile.all'
