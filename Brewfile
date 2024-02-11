@@ -51,5 +51,5 @@ brew 'brew-file'
 brew 'm1-terraform-provider-helper'
 
 # Additional files
-#file './Brewfile.Kieran-PC'
-#file './Brewfile.linux'
+file './Brewfile.$HOSTNAME'
+file './Brewfile.$PLATFORM'
