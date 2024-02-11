@@ -49,7 +49,3 @@ brew 'brew-file'
 
 # Other Homebrew packages
 brew 'm1-terraform-provider-helper'
-
-# Additional files
-#file './Brewfile.$HOSTNAME'
-#file './Brewfile.$PLATFORM'
