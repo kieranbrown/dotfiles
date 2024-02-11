@@ -128,5 +128,4 @@ brew 'webp'
 brew 'xz'
 brew 'zstd'
 
-# Main file
-#main 'Brewfile.all'
+file 'Brewfile.all'

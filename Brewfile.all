@@ -1,58 +1,63 @@
+tap "dashlane/tap"
+tap "homebrew/cask-fonts"
+tap "kreuzwerker/taps"
+tap "rcmdnk/file"
 
-# tap repositories and their packages
+# AWS
+brew "awscli"
+brew "cfn-lint"
+cask "session-manager-plugin"
+brew "serverless"
 
-tap 'homebrew/core'
-brew 'act'
-brew 'actionlint'
-brew 'awscli'
-brew 'base64'
-brew 'bash'
-brew 'cfn-lint'
-brew 'checkov'
-brew 'composer'
-brew 'coreutils'
-brew 'fzf'
-brew 'gcc'
-brew 'gh'
-brew 'git'
-brew 'git-lfs'
-brew 'gnupg'
-brew 'go'
-brew 'infracost'
-brew 'jq'
-brew 'localstack'
-brew 'markdownlint-cli'
-brew 'nvm'
-brew 'php'
-brew 'pre-commit'
-brew 'serverless'
-brew 'shellcheck'
-brew 'terraform-docs'
-brew 'terrascan'
-brew 'tfenv'
-brew 'tflint'
-brew 'tfsec'
-brew 'tgenv'
-brew 'trivy'
-brew 'vim'
-brew 'watch'
-brew 'wget'
-brew 'yq'
-brew 'zsh'
+# Fonts
+cask "font-jetbrains-mono"
 
-tap 'homebrew/cask-fonts'
+# Git
+brew "act"
+brew "actionlint"
+brew "git"
+brew "git-lfs"
+brew "gh"
+brew "pre-commit"
 
-tap 'dashlane/tap'
-brew 'dashlane-cli'
+# Misc
+brew "base64"
+brew "bash"
+brew "brew-file"
+brew "coreutils"
+brew "dashlane-cli"
+brew "fzf"
+brew "gcc"
+brew "go"
+brew "gnupg"
+brew "jq"
+brew "localstack"
+brew "markdownlint-cli"
+brew "shellcheck"
+brew "vim"
+brew "watch"
+brew "wget"
+brew "yq"
+brew "zsh"
 
-tap 'kreuzwerker/taps'
+# Node JS
+brew "nvm"
 
-tap 'rcmdnk/file'
-brew 'brew-file'
+# PHP
+brew "php"
+brew "composer"
 
-# Other Homebrew packages
-brew 'm1-terraform-provider-helper'
+# Terraform
+brew "checkov"
+brew "infracost"
+brew "terraform-docs"
+brew "terrascan"
+brew "tfenv"
+brew "tflint"
+brew "tfsec"
+brew "tgenv"
+brew "m1-terraform-provider-helper"
+brew "trivy"
 
-# Additional files
-#file './Brewfile.$HOSTNAME'
-#file './Brewfile.$PLATFORM'
+file ./Brewfile.$HOSTNAME
+file ./Brewfile.$PLATFORM
