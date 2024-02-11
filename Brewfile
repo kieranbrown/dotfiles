@@ -178,8 +178,6 @@ brew 'yq'
 brew 'zsh'
 brew 'zstd'
 
-# Main file
-#main './Brewfile.$HOSTNAME'
-
 # Additional files
-#file './Brewfile.$PLATFORM'
+file './Brewfile.$PLATFORM'
+file './Brewfile.$HOSTNAME'
