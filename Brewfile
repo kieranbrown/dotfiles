@@ -1,17 +1,7 @@
 
 # tap repositories and their packages
 
-tap 'homebrew/cask-fonts'
-
-tap 'dashlane/tap'
-brew 'dashlane-cli'
-
-tap 'kreuzwerker/taps'
-
-tap 'rcmdnk/file'
-brew 'brew-file'
-
-# Other Homebrew packages
+tap 'homebrew/core'
 brew 'acl'
 brew 'act'
 brew 'actionlint'
@@ -96,7 +86,6 @@ brew 'little-cms2'
 brew 'localstack'
 brew 'lua'
 brew 'lz4'
-brew 'm1-terraform-provider-helper'
 brew 'm4'
 brew 'markdownlint-cli'
 brew 'mawk'
@@ -178,6 +167,19 @@ brew 'yq'
 brew 'zsh'
 brew 'zstd'
 
+tap 'homebrew/cask-fonts'
+
+tap 'dashlane/tap'
+brew 'dashlane-cli'
+
+tap 'kreuzwerker/taps'
+
+tap 'rcmdnk/file'
+brew 'brew-file'
+
+# Other Homebrew packages
+brew 'm1-terraform-provider-helper'
+
 # Additional files
-file './Brewfile.$PLATFORM'
-file './Brewfile.$HOSTNAME'
+#file './Brewfile.$HOSTNAME'
+#file './Brewfile.$PLATFORM'
