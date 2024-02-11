@@ -50,5 +50,6 @@ brew 'brew-file'
 # Other Homebrew packages
 brew 'm1-terraform-provider-helper'
 
-file './Brewfile.$HOSTNAME'
-file './Brewfile.$PLATFORM'
+# Additional files
+#file './Brewfile.$HOSTNAME'
+#file './Brewfile.$PLATFORM'
