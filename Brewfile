@@ -21,7 +21,9 @@ brew jq
 brew localstack
 brew markdownlint-cli
 brew nvm
-brew pre-commit
+brew python-distlib
+brew python-filelock
+brew python-platformdirs
 brew serverless
 brew shellcheck
 brew terraform-docs
