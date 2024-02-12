@@ -21,7 +21,6 @@ brew jq
 brew localstack
 brew markdownlint-cli
 brew nvm
-brew pre-commit
 brew serverless
 brew shellcheck
 brew terraform-docs
