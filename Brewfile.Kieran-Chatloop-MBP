@@ -1,3 +1,5 @@
 file ~/Code/github.com/chatloop/library/Brewfile
 
-cask meetingbar
+cask amazon-chime
+cask logi-options-plus
+cask obsidian

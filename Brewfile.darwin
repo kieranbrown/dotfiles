@@ -1,18 +1,13 @@
 cask alfred
-cask amazon-chime
 cask arc
 # cask discord # commented out as this will conflict with Vencord
 cask gitkraken
-cask google-chrome --force
+cask google-chrome
 cask hoppscotch
-cask logi-options-plus
-cask microsoft-teams --force
-cask notion
-cask obsidian
-# cask plex
-cask slack --force
+cask meetingbar
+cask microsoft-teams
+cask slack
 # cask spotify # disabled to keep the premium patch
-# cask stremio
 cask tableplus
 cask visual-studio-code
 cask warp
@@ -24,10 +19,10 @@ cask docker-compose
 brew docker-credential-helper-ecr
 
 # Microsoft Office
-cask microsoft-excel --force
-cask microsoft-outlook --force
-cask microsoft-powerpoint --force
-cask microsoft-word --force
+cask microsoft-excel
+cask microsoft-outlook
+cask microsoft-powerpoint
+cask microsoft-word
 
 brew pinentry-mac
 brew telnet
