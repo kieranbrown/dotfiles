@@ -3,6 +3,7 @@
 
 tap homebrew/core
 brew act
+brew actionlint
 brew awscli
 brew base64
 brew bash
