@@ -6,7 +6,7 @@
   "vsicons.associations.files": [
     {
       "extensions": [
-        ".gitconfig.chatloop" // todo: .gitconfig*
+        ".gitconfig.chatloop"
       ],
       "filename": true,
       "icon": "git"

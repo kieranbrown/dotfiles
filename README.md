@@ -1,6 +1,15 @@
-# todo:
+# Dotfiles
 
-- dashlane integration - pull down .ssh keys etc
-- gitconfig gpgsign
-- how can brew installs automatically populate the correct Brewfile in the dotfiles repo?
-- provide install script in the readme, clone repo, run install.sh
+## Quick install
+
+```shell
+DOTFILES_DIR="${HOME}/Code/github.com/kieranbrown/dotfiles"
+mkdir -p "${DOTFILES_DIR}"
+${DOTFILES_DIR}/etc/install.sh
+```
+
+## Notes
+
+- dashlane integration - sync sensitive files such as ssh keys
+- automatic configuration of gpgsign
+- mac casks installs should populate Brewfile.darwin by default

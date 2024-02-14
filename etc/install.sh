@@ -49,7 +49,7 @@ fi
 
 if ! grep -q -- "$ZSH_PATH" /etc/shells; then
   echo 'Setting zsh as default shell'
-  echo "$ZSH_PATH" | sudo tee -a /etc/shells;
+  echo "$ZSH_PATH" | sudo tee -a /etc/shells
   chsh -s "$ZSH_PATH"
 fi
 
@@ -58,7 +58,7 @@ if [[ ! -f "${HOMEBREW_PREFIX}/etc/brew-wrap" ]]; then
   brew install rcmdnk/file/brew-file
 fi
 
-set +eu;
+set +eu
 source ${HOMEBREW_PREFIX}/etc/brew-wrap
 brew set_repo -r "${DOTFILES_DIR}" -y
 rm -rf ${HOME}/.config/brewfile/kieranbrown_dotfiles
