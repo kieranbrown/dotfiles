@@ -48,6 +48,7 @@ tap rcmdnk/file
 brew brew-file
 
 # Other Homebrew packages
+cask alfred
 brew m1-terraform-provider-helper
 
 # Additional files
