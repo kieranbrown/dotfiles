@@ -31,6 +31,7 @@ brew tfsec
 brew tgenv
 brew trivy
 brew vim
+brew virtualenv
 brew watch
 brew wget
 brew yq
