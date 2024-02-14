@@ -63,7 +63,7 @@ source ${HOMEBREW_PREFIX}/etc/brew-wrap
 brew set_repo -r "${DOTFILES_DIR}" -y
 rm -rf ${HOME}/.config/brewfile/kieranbrown_dotfiles
 ln -s "${DOTFILES_DIR}" "${HOME}/.config/brewfile/kieranbrown_dotfiles" # todo: don't assume name is kieranbrown_dotfiles
-brew file update
+HOMEBREW_BREWFILE_LEAVES=1 brew file update
 set -eu
 
 if [[ ! -d "${HOME}/.git-template" ]]; then
