@@ -77,6 +77,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export HOMEBREW_BREWFILE_LEAVES=1
 export HOMEBREW_BUNDLE_NO_LOCK=1
 export HOMEBREW_NO_ENV_HINTS=1
 
