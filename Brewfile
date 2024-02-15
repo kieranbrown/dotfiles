@@ -11,6 +11,7 @@ brew cfn-lint
 brew checkov
 brew composer
 brew coreutils
+brew docker-credential-helper-ecr
 brew fzf
 brew gh
 brew git
