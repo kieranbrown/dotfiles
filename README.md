@@ -5,7 +5,7 @@
 ```shell
 DOTFILES_DIR="${HOME}/Code/github.com/kieranbrown/dotfiles"
 mkdir -p "${DOTFILES_DIR}"
-git clone git@github.com:kieranbrown/dotfiles.git "${DOTFILES_DIR}"
+git clone https://github.com/kieranbrown/dotfiles.git "${DOTFILES_DIR}"
 cd "${DOTFILES_DIR}"
 ./etc/install.sh
 ```
@@ -13,6 +13,7 @@ cd "${DOTFILES_DIR}"
 ## Notes
 
 - dashlane integration - sync sensitive files such as ssh keys
+  - change origin of repo to ssh after ssh key sync
 - automatic configuration of gpgsign
 - mac casks installs should populate Brewfile.darwin by default
 - integrate mackup
