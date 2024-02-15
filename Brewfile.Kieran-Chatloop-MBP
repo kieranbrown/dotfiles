@@ -7,3 +7,6 @@ cask aws-vault
 cask logi-options-plus
 cask microsoft-teams
 cask obsidian
+
+# Other Homebrew packages
+brew dnsmasq
