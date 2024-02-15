@@ -2,7 +2,19 @@
 # tap repositories and their packages
 
 tap homebrew/core
+brew edencommon
+brew fb303
+brew fzf
+brew gdk-pixbuf
+brew ghostscript
+brew libheif
+brew liblqr
+brew libraw
+brew pango
 brew pinentry-mac
+brew python-distlib
+brew python-filelock
+brew python-platformdirs
 brew telnet
 
 tap homebrew/cask
