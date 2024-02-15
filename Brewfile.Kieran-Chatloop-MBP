@@ -3,6 +3,3 @@
 cask amazon-chime
 cask logi-options-plus
 # cask obsidian
-
-# Additional files
-file ~/Code/github.com/chatloop/library/Brewfile

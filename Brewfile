@@ -4,18 +4,24 @@
 tap homebrew/core
 brew act
 brew actionlint
+brew awscli
 brew base64
+brew bash
 brew cfn-lint
 brew checkov
+brew composer
 brew coreutils
 brew fzf
+brew gh
+brew git
+brew git-lfs
 brew gnupg
 brew infracost
-brew jinja2-cli
+brew jq
 brew localstack
 brew markdownlint-cli
-brew node@18
-brew packer
+brew nvm
+brew pre-commit
 brew serverless
 brew shellcheck
 brew terraform-docs
@@ -27,26 +33,14 @@ brew tgenv
 brew trivy
 brew vim
 brew watch
-brew yarn
+brew wget
+brew yq
 brew zsh
 
-tap homebrew/cask
-cask discord
-cask microsoft-auto-update
-cask notion
-cask session-manager-plugin
-
-tap homebrew/bundle
-
 tap homebrew/cask-fonts
-cask font-jetbrains-mono
-
-tap homebrew/cask-versions
 
 tap dashlane/tap
 brew dashlane-cli
-
-tap iann0036/iamlive
 
 tap kreuzwerker/taps
 

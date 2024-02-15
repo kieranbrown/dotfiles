@@ -65,7 +65,7 @@ set +eu
 brew-file set_repo -r "${DOTFILES_DIR}" -y
 rm -rf ${HOME}/.config/brewfile/kieranbrown_dotfiles
 ln -s "${DOTFILES_DIR}" "${HOME}/.config/brewfile/kieranbrown_dotfiles" # todo: don't assume name is kieranbrown_dotfiles
-HOMEBREW_BREWFILE_LEAVES=1 brew-file install
+HOMEBREW_BREWFILE_LEAVES=1 brew-file install --format file
 set -eu
 
 PRE_COMMIT_ARGS=(-t commit-msg -t pre-commit)
