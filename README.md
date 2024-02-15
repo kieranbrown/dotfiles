@@ -17,3 +17,5 @@ cd "${DOTFILES_DIR}"
 - use github ssh key commit signing instead of gpg
 - integrate mackup
 - integrate [".macos" config](https://github.com/driesvints/dotfiles/blob/main/.macos)
+- disable brew-file from writing to Brewfiles, it's buggy and annoying
+  - configure brew-file to always use the '--format file' option
