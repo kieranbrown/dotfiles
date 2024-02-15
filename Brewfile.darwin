@@ -1,24 +1,24 @@
 
 # Other Homebrew packages
-brew 'docker-credential-helper-ecr'
-brew 'pinentry-mac'
-brew 'telnet'
+brew docker-credential-helper-ecr
+brew pinentry-mac
+brew telnet
 
 # Other Cask applications
-cask 'alfred'
-cask 'arc'
-cask 'docker'
-cask 'gitkraken'
-cask 'google-chrome'
-cask 'hoppscotch'
-cask 'meetingbar'
-cask 'microsoft-excel'
-cask 'microsoft-outlook'
-cask 'microsoft-powerpoint'
-cask 'microsoft-teams'
-cask 'microsoft-word'
-cask 'slack'
-cask 'tableplus'
-cask 'visual-studio-code'
-cask 'warp'
-cask 'zoom'
+cask alfred
+cask arc
+cask docker
+cask gitkraken
+cask google-chrome
+cask hoppscotch
+cask meetingbar
+cask microsoft-excel
+cask microsoft-outlook
+cask microsoft-powerpoint
+cask microsoft-teams
+cask microsoft-word
+cask slack
+cask tableplus
+cask visual-studio-code
+cask warp
+cask zoom
