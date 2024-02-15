@@ -57,16 +57,14 @@ fi
 
 if [[ ! -f "${HOMEBREW_PREFIX}/etc/brew-wrap" ]]; then
   echo 'Installing brew-file'
-  # todo: brew-file seems to hang on macos
   brew install rcmdnk/file/brew-file
 fi
 
 set +eu
-source ${HOMEBREW_PREFIX}/etc/brew-wrap
-brew set_repo -r "${DOTFILES_DIR}" -y
+brew-file set_repo -r "${DOTFILES_DIR}" -y
 rm -rf ${HOME}/.config/brewfile/kieranbrown_dotfiles
 ln -s "${DOTFILES_DIR}" "${HOME}/.config/brewfile/kieranbrown_dotfiles" # todo: don't assume name is kieranbrown_dotfiles
-HOMEBREW_BREWFILE_LEAVES=1 brew file update
+HOMEBREW_BREWFILE_LEAVES=1 brew-file update
 set -eu
 
 if [[ ! -d "${HOME}/.git-template" ]]; then
