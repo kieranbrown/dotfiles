@@ -21,6 +21,7 @@ brew jq
 brew localstack
 brew markdownlint-cli
 brew nvm
+brew pre-commit
 brew serverless
 brew shellcheck
 brew terraform-docs
@@ -31,7 +32,6 @@ brew tfsec
 brew tgenv
 brew trivy
 brew vim
-brew virtualenv
 brew watch
 brew wget
 brew yq

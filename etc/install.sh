@@ -9,25 +9,25 @@ export SCRIPT_DIR DOTFILES_DIR
 
 case "$(uname -sr)" in
 
-   Darwin*)
-     echo 'Setting up Darwin'
-     "${SCRIPT_DIR}/setup-darwin.sh"
-     ;;
+  Darwin*)
+    echo 'Setting up Darwin'
+    "${SCRIPT_DIR}/setup-darwin.sh"
+    ;;
 
-   Linux*WSL*)
-     echo 'Setting up WSL'
-     "${SCRIPT_DIR}/setup-linux.sh"
-     "${SCRIPT_DIR}/setup-wsl.sh"
-     ;;
+  Linux*WSL*)
+    echo 'Setting up WSL'
+    "${SCRIPT_DIR}/setup-linux.sh"
+    "${SCRIPT_DIR}/setup-wsl.sh"
+    ;;
 
-   Linux*)
-     echo 'Setting up Linux'
-     "${SCRIPT_DIR}/setup-linux.sh"
-     ;;
+  Linux*)
+    echo 'Setting up Linux'
+    "${SCRIPT_DIR}/setup-linux.sh"
+    ;;
 
-   *)
-     echo 'Unsupported os'; exit 1;
-     ;;
+  *)
+    echo 'Unsupported os'; exit 1;
+    ;;
 esac
 
 if [[ $(command -v brew) == "" ]]; then
