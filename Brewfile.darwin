@@ -1,6 +1,5 @@
 
 # Other Homebrew packages
-brew docker-credential-helper-ecr
 brew pinentry-mac
 brew telnet
 
