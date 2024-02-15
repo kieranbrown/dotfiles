@@ -8,14 +8,19 @@ brew telnet
 tap homebrew/cask
 cask alfred
 cask arc
+cask docker
 cask gitkraken
+cask google-chrome
 cask hoppscotch
 cask meetingbar
 cask microsoft-excel
 cask microsoft-outlook
 cask microsoft-powerpoint
 cask microsoft-word
+cask rectangle
 cask session-manager-plugin
+cask slack
+cask tableplus
 cask visual-studio-code
 cask warp
 cask zoom
@@ -31,6 +36,3 @@ tap dashlane/tap
 tap kreuzwerker/taps
 
 tap rcmdnk/file
-
-# Additional files
-file ./Brewfile.chatloop
