@@ -14,7 +14,7 @@ cd "${DOTFILES_DIR}"
 
 - dashlane integration - sync sensitive files such as ssh keys
   - change origin of repo to ssh after ssh key sync
-- automatic configuration of gpgsign
+- use github ssh key commit signing instead of gpg
 - mac casks installs should populate Brewfile.darwin by default
 - integrate mackup
 - integrate [".macos" config](https://github.com/driesvints/dotfiles/blob/main/.macos)

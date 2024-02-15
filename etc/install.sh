@@ -45,6 +45,7 @@ test -f "${ZSH_PATH}" || brew install zsh
 
 if [[ ! -d "${HOME}/.oh-my-zsh" ]]; then
   echo 'Installing oh-my-zsh'
+  # todo: after install on macos it seems to switch shell to zsh which exits this script
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
@@ -56,6 +57,7 @@ fi
 
 if [[ ! -f "${HOMEBREW_PREFIX}/etc/brew-wrap" ]]; then
   echo 'Installing brew-file'
+  # todo: brew-file seems to hang on macos
   brew install rcmdnk/file/brew-file
 fi
 
