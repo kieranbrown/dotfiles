@@ -17,6 +17,7 @@ brew gh
 brew git
 brew git-lfs
 brew gnupg
+brew go
 brew infracost
 brew jq
 brew libx11
