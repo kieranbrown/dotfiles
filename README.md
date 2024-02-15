@@ -16,3 +16,4 @@ cd "${DOTFILES_DIR}"
 - automatic configuration of gpgsign
 - mac casks installs should populate Brewfile.darwin by default
 - integrate mackup
+- integrate [".macos" config](https://github.com/driesvints/dotfiles/blob/main/.macos)
