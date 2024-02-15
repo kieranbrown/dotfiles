@@ -46,6 +46,7 @@ test -f "${ZSH_PATH}" || brew install zsh
 if [[ ! -d "${HOME}/.oh-my-zsh" ]]; then
   echo 'Installing oh-my-zsh'
   # todo: after install on macos it seems to switch shell to zsh which exits this script
+  # potentially running this in a subshell would fix that
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
