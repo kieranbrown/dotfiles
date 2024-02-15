@@ -68,6 +68,10 @@ ln -s "${DOTFILES_DIR}" "${HOME}/.config/brewfile/kieranbrown_dotfiles" # todo: 
 HOMEBREW_BREWFILE_LEAVES=1 brew-file install
 set -eu
 
+PRE_COMMIT_ARGS=(-t commit-msg -t pre-commit)
+
 if [[ ! -d "${HOME}/.git-template" ]]; then
-  pre-commit init-templatedir -t commit-msg -t pre-commit ${HOME}/.git-template
+  pre-commit init-templatedir "${PRE_COMMIT_ARGS[@]}" "${HOME}/.git-template"
 fi
+
+(cd "${DOTFILES_DIR}" && pre-commit install "${PRE_COMMIT_ARGS[@]}")

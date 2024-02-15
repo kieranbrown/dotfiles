@@ -17,5 +17,4 @@ cd "${DOTFILES_DIR}"
 - use github ssh key commit signing instead of gpg
 - mac casks installs should populate Brewfile.darwin by default
 - integrate mackup
-- run pre-commit install on this repo after setup complete
 - integrate [".macos" config](https://github.com/driesvints/dotfiles/blob/main/.macos)

@@ -1,5 +1,8 @@
-file ~/Code/github.com/chatloop/library/Brewfile
 
+# Other Cask applications
 cask amazon-chime
 cask logi-options-plus
-cask obsidian
+# cask obsidian
+
+# Additional files
+file ~/Code/github.com/chatloop/library/Brewfile

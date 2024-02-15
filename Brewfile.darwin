@@ -1,28 +1,24 @@
-cask alfred
-cask arc
-# cask discord # commented out as this will conflict with Vencord
-cask gitkraken
-cask google-chrome
-cask hoppscotch
-cask meetingbar
-cask microsoft-teams
-cask slack
-# cask spotify # disabled to keep the premium patch
-cask tableplus
-cask visual-studio-code
-cask warp
-cask zoom
 
-# Docker (For WSL, use the WSL integration in Docker Desktop)
-cask docker
-cask docker-compose
-brew docker-credential-helper-ecr
+# Other Homebrew packages
+brew 'docker-credential-helper-ecr'
+brew 'pinentry-mac'
+brew 'telnet'
 
-# Microsoft Office
-cask microsoft-excel
-cask microsoft-outlook
-cask microsoft-powerpoint
-cask microsoft-word
-
-brew pinentry-mac
-brew telnet
+# Other Cask applications
+cask 'alfred'
+cask 'arc'
+cask 'docker'
+cask 'gitkraken'
+cask 'google-chrome'
+cask 'hoppscotch'
+cask 'meetingbar'
+cask 'microsoft-excel'
+cask 'microsoft-outlook'
+cask 'microsoft-powerpoint'
+cask 'microsoft-teams'
+cask 'microsoft-word'
+cask 'slack'
+cask 'tableplus'
+cask 'visual-studio-code'
+cask 'warp'
+cask 'zoom'

@@ -1,55 +1,61 @@
 
 # tap repositories and their packages
 
-tap homebrew/core
-brew act
-brew actionlint
-brew awscli
-brew base64
-brew bash
-brew cfn-lint
-brew checkov
-brew composer
-brew coreutils
-brew fzf
-brew gh
-brew git
-brew git-lfs
-brew gnupg
-brew infracost
-brew jq
-brew localstack
-brew markdownlint-cli
-brew nvm
-brew pre-commit
-brew serverless
-brew shellcheck
-brew terraform-docs
-brew terrascan
-brew tfenv
-brew tflint
-brew tfsec
-brew tgenv
-brew trivy
-brew vim
-brew watch
-brew wget
-brew yq
-brew zsh
+tap 'homebrew/core'
+brew 'act'
+brew 'actionlint'
+brew 'base64'
+brew 'cfn-lint'
+brew 'checkov'
+brew 'coreutils'
+brew 'fzf'
+brew 'gnupg'
+brew 'infracost'
+brew 'jinja2-cli'
+brew 'localstack'
+brew 'markdownlint-cli'
+brew 'node@18'
+brew 'packer'
+brew 'serverless'
+brew 'shellcheck'
+brew 'terraform-docs'
+brew 'terrascan'
+brew 'tfenv'
+brew 'tflint'
+brew 'tfsec'
+brew 'tgenv'
+brew 'trivy'
+brew 'vim'
+brew 'watch'
+brew 'yarn'
+brew 'zsh'
 
-tap homebrew/cask-fonts
+tap 'homebrew/cask'
+cask 'discord'
+cask 'microsoft-auto-update'
+cask 'notion'
+cask 'session-manager-plugin'
 
-tap dashlane/tap
-brew dashlane-cli
+tap 'homebrew/bundle'
 
-tap kreuzwerker/taps
+tap 'homebrew/cask-fonts'
+cask 'font-jetbrains-mono'
 
-tap rcmdnk/file
-brew brew-file
+tap 'homebrew/cask-versions'
+
+tap 'dashlane/tap'
+brew 'dashlane-cli'
+
+tap 'iann0036/iamlive'
+
+tap 'kreuzwerker/taps'
+
+tap 'rcmdnk/file'
+brew 'brew-file'
 
 # Other Homebrew packages
-brew m1-terraform-provider-helper
+brew 'm1-terraform-provider-helper'
 
 # Additional files
-file ./Brewfile.$HOSTNAME
-file ./Brewfile.$PLATFORM
+#file './Brewfile.$HOSTNAME'
+#file './Brewfile.$PLATFORM'
