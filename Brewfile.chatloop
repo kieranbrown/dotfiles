@@ -1,0 +1,42 @@
+tap homebrew/bundle
+tap homebrew/cask-versions
+
+# Other Homebrew packages
+brew awscli
+brew bash
+brew cocoapods
+brew composer
+brew dnsmasq
+brew gh
+brew git
+brew git-lfs
+brew go
+brew gum
+brew imagemagick
+brew jq
+brew librsvg
+brew mas
+brew nvm
+brew openjdk@17
+brew php@8.1
+brew pre-commit
+brew ruby
+brew session-manager-plugin
+brew sponge
+brew virtualenv
+brew watchman
+brew wget
+brew yq
+
+# Other Cask applications
+cask 1password
+cask 1password-cli
+cask android-studio
+cask aws-vault
+cask docker
+cask google-chrome
+cask iterm2
+cask microsoft-teams
+cask rectangle
+cask slack
+cask tableplus

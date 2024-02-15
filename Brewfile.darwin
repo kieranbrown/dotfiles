@@ -1,5 +1,7 @@
 
-# Other Homebrew packages
+# tap repositories and their packages
+
+tap homebrew/core
 brew pinentry-mac
 brew telnet
 
@@ -22,3 +24,6 @@ cask tableplus
 cask visual-studio-code
 cask warp
 cask zoom
+
+# Additional files
+file ./Brewfile.chatloop
