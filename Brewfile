@@ -38,8 +38,6 @@ brew wget
 brew yq
 brew zsh
 
-tap homebrew/cask-fonts
-
 tap dashlane/tap
 brew dashlane-cli
 

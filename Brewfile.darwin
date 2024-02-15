@@ -1,11 +1,9 @@
 
-# tap repositories and their packages
-
-tap homebrew/core
+# Other Homebrew packages
 brew pinentry-mac
 brew telnet
 
-tap homebrew/cask
+# Other Cask applications
 cask alfred
 cask arc
 cask docker
@@ -24,15 +22,3 @@ cask tableplus
 cask visual-studio-code
 cask warp
 cask zoom
-
-tap homebrew/bundle
-
-tap homebrew/cask-fonts
-
-tap homebrew/cask-versions
-
-tap dashlane/tap
-
-tap kreuzwerker/taps
-
-tap rcmdnk/file
