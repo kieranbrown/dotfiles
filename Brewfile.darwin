@@ -2,9 +2,6 @@
 # tap repositories and their packages
 
 tap homebrew/core
-brew cairo
-brew fizz
-brew graphite2
 brew pinentry-mac
 brew telnet
 
