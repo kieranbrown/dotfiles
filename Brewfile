@@ -7,30 +7,23 @@ brew actionlint
 brew awscli
 brew base64
 brew bash
-brew boost
 brew cfn-lint
 brew checkov
 brew composer
 brew coreutils
-brew docker-credential-helper-ecr
-brew double-conversion
-brew fmt
 brew fzf
 brew gh
 brew git
 brew git-lfs
-brew glog
 brew gnupg
 brew infracost
 brew jq
-brew libx11
 brew localstack
 brew markdownlint-cli
 brew nvm
 brew pre-commit
 brew serverless
 brew shellcheck
-brew snappy
 brew terraform-docs
 brew terrascan
 brew tfenv
@@ -43,10 +36,6 @@ brew watch
 brew wget
 brew yq
 brew zsh
-
-tap homebrew/cask
-
-tap homebrew/bundle
 
 tap homebrew/cask-fonts
 
