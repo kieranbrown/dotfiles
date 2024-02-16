@@ -14,7 +14,6 @@ cd "${DOTFILES_DIR}"
 
 - dashlane integration - sync sensitive files such as ssh keys
   - change origin of repo to ssh after ssh key sync
-- use github ssh key commit signing instead of gpg
 - integrate mackup
 - integrate [".macos" config](https://github.com/driesvints/dotfiles/blob/main/.macos)
 - disable brew-file from writing to Brewfiles, it's buggy and annoying
