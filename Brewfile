@@ -38,6 +38,7 @@ brew watch
 brew wget
 brew yq
 brew zsh
+brew zsh-autosuggestions
 
 tap dashlane/tap
 brew dashlane-cli

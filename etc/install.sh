@@ -43,13 +43,6 @@ ZSH_PATH="${HOMEBREW_PREFIX}/bin/zsh"
 
 test -f "${ZSH_PATH}" || brew install zsh
 
-if [[ ! -d "${HOME}/.oh-my-zsh" ]]; then
-  echo 'Installing oh-my-zsh'
-  # todo: after install on macos it seems to switch shell to zsh which exits this script
-  # potentially running this in a subshell would fix that
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
-
 if ! grep -q -- "$ZSH_PATH" /etc/shells; then
   echo 'Setting zsh as default shell'
   echo "$ZSH_PATH" | sudo tee -a /etc/shells
@@ -75,3 +68,14 @@ if [[ ! -d "${HOME}/.git-template" ]]; then
 fi
 
 (cd "${DOTFILES_DIR}" && pre-commit install "${PRE_COMMIT_ARGS[@]}")
+
+# this must be last as it switches to zsh afterwards
+if [[ ! -d "${HOME}/.oh-my-zsh" ]]; then
+  echo 'Installing oh-my-zsh'
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+  rm -rf ${HOME}/.zshrc.pre*
+fi
+
+"${SCRIPT_DIR}/symlink-files.sh"
+
+exec $ZSH_PATH -l
