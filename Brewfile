@@ -44,12 +44,10 @@ tap dashlane/tap
 brew dashlane-cli
 
 tap kreuzwerker/taps
+brew m1-terraform-provider-helper
 
 tap rcmdnk/file
 brew brew-file
-
-# Other Homebrew packages
-brew m1-terraform-provider-helper
 
 # Main file
 main ./Brewfile.$PLATFORM
