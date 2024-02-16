@@ -5,7 +5,7 @@
 [init]
   templateDir = ~/.git-template
 [commit]
-  gpgsign = false # todo: set to true
+  gpgsign = true
 [push]
   autoSetupRemote = true
 [gpg]
