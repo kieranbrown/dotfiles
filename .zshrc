@@ -70,7 +70,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew common-aliases composer docker docker-compose git gpg-agent kubectl kubectx npm nvm sudo zsh-autosuggestions zsh-interactive-cd)
+plugins=(aws brew common-aliases composer docker docker-compose git gpg-agent kubectl kubectx npm nvm sudo zsh-interactive-cd)
 
 export NVM_LAZY=1 NVM_HOMEBREW=${HOMEBREW_PREFIX}
 source $ZSH/oh-my-zsh.sh
@@ -102,6 +102,5 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias watch="watch "
 
-if [ -f "${HOMEBREW_PREFIX}/etc/brew-wrap" ]; then
-  source "${HOMEBREW_PREFIX}/etc/brew-wrap"
-fi
+source "${HOMEBREW_PREFIX}/etc/brew-wrap"
+source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"

@@ -1,11 +1,14 @@
 [user]
   name = Kieran Brown
   email = kswb96@gmail.com
+  signingkey = ~/.ssh/id_rsa.pub
 [init]
   templateDir = ~/.git-template
 [commit]
   gpgsign = false # todo: set to true
 [push]
   autoSetupRemote = true
+[gpg]
+  format = ssh
 [includeIf "gitdir:~/Code/github.com/chatloop"]
   path = .gitconfig.chatloop

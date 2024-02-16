@@ -67,7 +67,11 @@ if [[ ! -d "${HOME}/.git-template" ]]; then
   pre-commit init-templatedir "${PRE_COMMIT_ARGS[@]}" "${HOME}/.git-template"
 fi
 
-(cd "${DOTFILES_DIR}" && pre-commit install "${PRE_COMMIT_ARGS[@]}")
+(
+  cd "${DOTFILES_DIR}";
+  pre-commit install "${PRE_COMMIT_ARGS[@]}";
+  git remote set-url origin git@github.com:kieranbrown/dotfiles.git
+)
 
 # this must be last as it switches to zsh afterwards
 if [[ ! -d "${HOME}/.oh-my-zsh" ]]; then
