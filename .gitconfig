@@ -8,6 +8,8 @@
   gpgsign = true
 [push]
   autoSetupRemote = true
+[pull]
+  rebase = false
 [gpg]
   format = ssh
 [includeIf "gitdir:~/Code/github.com/chatloop"]
