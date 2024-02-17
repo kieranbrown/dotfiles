@@ -7,7 +7,7 @@ add_to_dock() {
   local app="$1"
   local behaviour="${2:-always}"
 
-  if [ "$behaviour" == "if_exists" ] && [ ! -f "$app" ]; then
+  if [ "$behaviour" == "if_exists" ] && [ ! -d "$app" ]; then
     return
   fi
 
