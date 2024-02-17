@@ -2,7 +2,6 @@
 # tap repositories and their packages
 
 tap homebrew/core
-brew folly
 brew pinentry-mac
 brew telnet
 
@@ -13,7 +12,6 @@ cask docker
 cask gitkraken
 cask google-chrome
 cask hoppscotch
-cask logi-options-plus
 cask meetingbar
 cask microsoft-excel
 cask microsoft-outlook
