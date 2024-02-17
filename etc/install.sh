@@ -5,81 +5,54 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 DOTFILES_DIR=$(realpath "${SCRIPT_DIR}/../")
 export SCRIPT_DIR DOTFILES_DIR
 
-"${SCRIPT_DIR}/symlink-files.sh"
+run_scripts() {
+  local script_pattern="$1"
 
-case "$(uname -sr)" in
+  shopt -s nullglob
+  # shellcheck disable=SC2206
+  scripts=($script_pattern)
+  shopt -u nullglob
+
+  if [ ${#scripts[@]} -eq 0 ]; then
+      echo "No matching scripts found."
+      return 0
+  fi
+
+  for script in "${scripts[@]}"; do
+    echo "Running script: $script"
+    # shellcheck source=/dev/null
+    source "$script"
+  done
+}
+
+os_setup() {
+  case "$(uname -sr)" in
 
   Darwin*)
-    echo 'Setting up Darwin'
-    "${SCRIPT_DIR}/setup-darwin.sh"
+    run_scripts "${SCRIPT_DIR}/os.d/$1-darwin-*.sh"
     ;;
 
   Linux*WSL*)
-    echo 'Setting up WSL'
-    "${SCRIPT_DIR}/setup-linux.sh"
-    "${SCRIPT_DIR}/setup-wsl.sh"
+    run_scripts "${SCRIPT_DIR}/os.d/$1-linux-*.sh"
+    run_scripts "${SCRIPT_DIR}/os.d/$1-wsl-*.sh"
     ;;
 
   Linux*)
-    echo 'Setting up Linux'
-    "${SCRIPT_DIR}/setup-linux.sh"
+    run_scripts "${SCRIPT_DIR}/os.d/$1-linux-*.sh"
     ;;
 
   *)
     echo 'Unsupported os'; exit 1;
     ;;
 esac
+}
 
-if [[ $(command -v brew) == "" ]]; then
-  echo 'Installing brew'
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-  test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-  test -d /opt/homebrew && eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
+main() {
+  os_setup "pre"
+  run_scripts "${SCRIPT_DIR}/install.d/*.sh"
+  os_setup "post"
+}
 
-HOMEBREW_PREFIX="$(brew --prefix)"
-ZSH_PATH="${HOMEBREW_PREFIX}/bin/zsh"
+(cd "${DOTFILES_DIR}"; main)
 
-test -f "${ZSH_PATH}" || brew install zsh
-
-if ! grep -q -- "$ZSH_PATH" /etc/shells; then
-  echo 'Setting zsh as default shell'
-  echo "$ZSH_PATH" | sudo tee -a /etc/shells
-  chsh -s "$ZSH_PATH"
-fi
-
-if [[ ! -f "${HOMEBREW_PREFIX}/etc/brew-wrap" ]]; then
-  echo 'Installing brew-file'
-  brew install rcmdnk/file/brew-file
-fi
-
-set +eu
-brew-file set_repo -r "${DOTFILES_DIR}" -y
-rm -rf ${HOME}/.config/brewfile/kieranbrown_dotfiles
-ln -s "${DOTFILES_DIR}" "${HOME}/.config/brewfile/kieranbrown_dotfiles" # todo: don't assume name is kieranbrown_dotfiles
-HOMEBREW_BREWFILE_LEAVES=1 brew-file install --format file
-set -eu
-
-PRE_COMMIT_ARGS=(-t commit-msg -t pre-commit)
-
-if [[ ! -d "${HOME}/.git-template" ]]; then
-  pre-commit init-templatedir "${PRE_COMMIT_ARGS[@]}" "${HOME}/.git-template"
-fi
-
-(
-  cd "${DOTFILES_DIR}";
-  pre-commit install "${PRE_COMMIT_ARGS[@]}";
-  git remote set-url origin git@github.com:kieranbrown/dotfiles.git
-)
-
-# this must be last as it switches to zsh afterwards
-if [[ ! -d "${HOME}/.oh-my-zsh" ]]; then
-  echo 'Installing oh-my-zsh'
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-  rm -rf ${HOME}/.zshrc.pre*
-fi
-
-"${SCRIPT_DIR}/symlink-files.sh"
-
-exec $ZSH_PATH -l
+exec ${ZSH_PATH:-/bin/zsh} -l
