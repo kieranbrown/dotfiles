@@ -7,6 +7,7 @@ export SCRIPT_DIR DOTFILES_DIR
 
 run_scripts() {
   local script_pattern="$1"
+  local original_dir="$PWD"
 
   shopt -s nullglob
   # shellcheck disable=SC2206
@@ -22,6 +23,7 @@ run_scripts() {
     echo "Running script: $script"
     # shellcheck source=/dev/null
     source "$script"
+    cd "${original_dir}" # in case any script decides to move directories
   done
 }
 
