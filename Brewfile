@@ -11,6 +11,7 @@ brew cfn-lint
 brew checkov
 brew composer
 brew coreutils
+brew docker-credential-helper-ecr
 brew fzf
 brew gh
 brew git
@@ -36,6 +37,7 @@ brew watch
 brew wget
 brew yq
 brew zsh
+brew zsh-autosuggestions
 
 tap dashlane/tap
 brew dashlane-cli
