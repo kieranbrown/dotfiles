@@ -7,9 +7,6 @@ brew dockutil
 brew mackup
 brew telnet
 
-tap OJFord/formulae
-brew loginitems
-
 tap homebrew/cask
 cask alfred
 cask arc
@@ -37,5 +34,6 @@ tap dashlane/tap
 tap kreuzwerker/taps
 
 tap ojford/formulae
+brew loginitems
 
 tap rcmdnk/file
