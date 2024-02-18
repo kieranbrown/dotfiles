@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-# todo: '-s false' is meant to hide but it doesn't work
+# '-s false' is meant to hide the application when launched, but it doesn't work
 # there is a potential solution on the macrumours forums suggesting LaunchAgent plists might work
 # https://forums.macrumors.com/threads/login-items-hide.2366349/page-4
 
