@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
+# allows for running each script individually
+[ -z "${COMMON_VARS_SOURCED-}" ] && source "$(dirname "$0")/00-common-vars.sh"
+
 export ZSH_PATH="${HOMEBREW_PREFIX}/bin/zsh"
 
 if ! grep -q -- "$ZSH_PATH" /etc/shells; then

@@ -3,6 +3,9 @@
     "Brewfile*": "ruby",
     ".gitconfig*": "properties"
   },
+  "shellcheck.customArgs": [
+    "-x"
+  ],
   "vsicons.associations.files": [
     {
       "extensions": [

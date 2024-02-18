@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
+# allows for running each script individually
+[ -z "${COMMON_VARS_SOURCED-}" ] && source "$(dirname "$0")/00-common-vars.sh"
+
+GIT_FOLDER_NAME="${GIT_USERNAME}_${GIT_REPOSITORY}"
+
 brew-file set_repo -r "${DOTFILES_DIR}" -y
-rm -rf "${HOME}/.config/brewfile/kieranbrown_dotfiles"
-ln -s "${DOTFILES_DIR}" "${HOME}/.config/brewfile/kieranbrown_dotfiles" # todo: don't assume name is kieranbrown_dotfiles
+rm -rf "${HOME}/.config/brewfile/${GIT_FOLDER_NAME}"
+ln -s "${DOTFILES_DIR}" "${HOME}/.config/brewfile/${GIT_FOLDER_NAME}"
 HOMEBREW_BREWFILE_LEAVES=1 HOMEBREW_BREWFILE_ON_REQUEST=1 brew-file install --format file
