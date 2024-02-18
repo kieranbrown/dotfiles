@@ -49,14 +49,17 @@ os_setup() {
 esac
 }
 
+# todo: add nice outputs throughout
 main() {
   os_setup "pre"
   run_scripts "${SCRIPT_DIR}/install.d/*.sh"
   os_setup "post"
 }
 
-(cd "${DOTFILES_DIR}"; main)
+# Ask for the administrator password upfront
+sudo -v
 
-exec ${ZSH_PATH:-/bin/zsh} -l
+# Keep-alive: update existing `sudo` time stamp until script has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# todo: add nice outputs
+(cd "${DOTFILES_DIR}"; main; exec ${ZSH_PATH:-/bin/zsh} -l)
