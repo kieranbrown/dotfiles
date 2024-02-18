@@ -49,6 +49,7 @@ os_setup() {
 esac
 }
 
+# todo: add fresh.sh file that runs the commands in the readme
 # todo: add nice outputs throughout
 main() {
   os_setup "pre"
