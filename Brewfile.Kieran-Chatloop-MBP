@@ -7,5 +7,7 @@ cask 1password
 cask 1password-cli
 cask amazon-chime
 cask aws-vault
+cask meetingbar
 cask microsoft-teams
 cask obsidian
+cask slack

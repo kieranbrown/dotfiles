@@ -5,13 +5,15 @@ defaults write com.apple.dock persistent-apps -array
 
 add_to_dock() {
   local app="$1"
-  local behaviour="${2:-always}"
-
-  if [ "$behaviour" == "if_exists" ] && [ ! -d "$app" ]; then
-    return
-  fi
-
   dockutil --add "$app" --no-restart
+}
+
+add_to_dock_if_exists() {
+  local app="$1"
+
+  if [ -d "$app" ]; then
+    add_to_dock "$app"
+  fi
 }
 
 add_to_dock '/Applications/Arc.app'
@@ -21,6 +23,6 @@ add_to_dock '/Applications/TablePlus.app'
 add_to_dock '/Applications/Mail.app'
 add_to_dock '/Applications/Spotify.app'
 add_to_dock '/Applications/Slack.app'
-add_to_dock '/Applications/Microsoft Teams (work or school).app' 'if_exists'
+add_to_dock_if_exists '/Applications/Microsoft Teams (work or school).app'
 
 killall Dock

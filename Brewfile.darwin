@@ -2,8 +2,13 @@
 # tap repositories and their packages
 
 tap homebrew/core
+brew defaultbrowser
 brew dockutil
+brew mackup
 brew telnet
+
+tap OJFord/formulae
+brew loginitems
 
 tap homebrew/cask
 cask alfred
@@ -13,21 +18,24 @@ cask gitkraken
 cask google-chrome
 cask hoppscotch
 cask logi-options-plus
-cask meetingbar
+cask macmediakeyforwarder
 cask microsoft-excel
 cask microsoft-outlook
 cask microsoft-powerpoint
 cask microsoft-word
 cask rectangle
 cask session-manager-plugin
-cask slack
 cask tableplus
 cask visual-studio-code
 cask warp
 cask zoom
 
+tap homebrew/services
+
 tap dashlane/tap
 
 tap kreuzwerker/taps
+
+tap ojford/formulae
 
 tap rcmdnk/file

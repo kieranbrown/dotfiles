@@ -58,3 +58,5 @@ main() {
 (cd "${DOTFILES_DIR}"; main)
 
 exec ${ZSH_PATH:-/bin/zsh} -l
+
+# todo: add nice outputs

@@ -1,14 +1,20 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-# todo: implement me
-# this is for custom defaults - an extension to macos-defaults.sh
+# enable dark mode
+osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
 
-# - dark mode
-# - battery percentage
-# - alfred spotlight
-# - stop windows from rearranging based on usage
-# - disable sleep altogether
-# - set arc default browser
-# - disable clicking the desktop
-# - keyboard movement speed
+# Turn on battery percentage in menu bar
+defaults -currentHost write com.apple.controlcenter.plist BatteryShowPercentage -bool true
+
+# Disable "Click to reveal desktop"
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+
+# Display the time with seconds enabled
+defaults write com.apple.menuextra.clock ShowSeconds -bool true
+
+# Remove spotlight from the menu bar
+defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool true
+
+# Set Arc as the default browser
+defaultbrowser browser # annoyingly registered as "browser" but it's actually Arc
