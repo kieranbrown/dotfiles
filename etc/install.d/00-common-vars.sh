@@ -10,3 +10,9 @@ export GIT_REPOSITORY="dotfiles"
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 DOTFILES_DIR=$(realpath "${SCRIPT_DIR}/../../")
 export DOTFILES_DIR
+
+# shellcheck source=../../.zsh_exports
+source "${DOTFILES_DIR}/.zsh_exports"
+
+# shellcheck source=../../.zsh_aliases
+source "${DOTFILES_DIR}/.zsh_aliases"

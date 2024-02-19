@@ -1,7 +1,8 @@
 {
   "files.associations": {
     "Brewfile*": "ruby",
-    ".gitconfig*": "properties"
+    ".gitconfig*": "properties",
+    ".zsh*": "shellscript"
   },
   "shellcheck.customArgs": [
     "-x"

@@ -72,14 +72,10 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(aws brew common-aliases composer docker docker-compose git gpg-agent kubectl kubectx npm nvm sudo zsh-interactive-cd)
 
-export NVM_LAZY=1 NVM_HOMEBREW=${HOMEBREW_PREFIX}
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export HOMEBREW_BREWFILE_LEAVES=1
-export HOMEBREW_BREWFILE_ON_REQUEST=1
-export HOMEBREW_BUNDLE_NO_LOCK=1
-export HOMEBREW_NO_ENV_HINTS=1
+source $(dirname "$0")/.zsh_exports
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -96,11 +92,7 @@ export EDITOR='vim'
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run alias.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias watch="watch "
+source $(dirname "$0")/.zsh_aliases
 
-source "${HOMEBREW_PREFIX}/etc/brew-wrap"
 source "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "${HOMEBREW_PREFIX}/etc/brew-wrap"
