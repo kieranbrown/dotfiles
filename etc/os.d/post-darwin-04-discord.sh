@@ -14,8 +14,8 @@ fi
 if [ ! -f "/Applications/Discord.app/Contents/Resources/_app.asar" ]; then
   killall Discord || true
   killall VencordInstaller || true
-  rm -rf VencordInstaller*;
-  wget https://github.com/Vencord/Installer/releases/latest/download/VencordInstaller.MacOs.zip;
-  unzip VencordInstaller.MacOs.zip;
-  open -a VencordInstaller.app;
+  rm -rf VencordInstaller*
+  wget https://github.com/Vencord/Installer/releases/latest/download/VencordInstaller.MacOs.zip
+  unzip VencordInstaller.MacOs.zip
+  open -a VencordInstaller.app
 fi
