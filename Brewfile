@@ -18,7 +18,6 @@ brew git
 brew git-lfs
 brew gnupg
 brew infracost
-brew jinja2-cli
 brew jq
 brew localstack
 brew markdownlint-cli
