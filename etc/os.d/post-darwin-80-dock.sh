@@ -22,7 +22,7 @@ add_to_dock '/Applications/Warp.app'
 add_to_dock '/Applications/TablePlus.app'
 add_to_dock '/Applications/Mail.app'
 add_to_dock '/Applications/Spotify.app'
-add_to_dock '/Applications/Slack.app'
+add_to_dock_if_exists '/Applications/Slack.app'
 add_to_dock_if_exists '/Applications/Microsoft Teams (work or school).app'
 
 killall Dock

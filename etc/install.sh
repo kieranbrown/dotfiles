@@ -51,6 +51,7 @@ esac
 
 # todo: add fresh.sh file that runs the commands in the readme
 # todo: add nice outputs throughout
+# todo: add support for github codespaces (install.sh needs moving to root)
 main() {
   os_setup "pre"
   run_scripts "${SCRIPT_DIR}/install.d/*.sh"
