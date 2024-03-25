@@ -21,6 +21,7 @@ cask microsoft-excel
 cask microsoft-outlook
 cask microsoft-powerpoint
 cask microsoft-word
+cask raspberry-pi-imager
 cask rectangle
 cask session-manager-plugin
 cask tableplus
