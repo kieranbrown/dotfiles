@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
+alias kctx="kubectx"
+alias kns="kubens"
 alias watch="watch "
