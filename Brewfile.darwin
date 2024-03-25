@@ -33,6 +33,8 @@ tap homebrew/services
 
 tap dashlane/tap
 
+tap derailed/k9s
+
 tap kreuzwerker/taps
 
 tap ojford/formulae

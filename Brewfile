@@ -19,8 +19,8 @@ brew git-lfs
 brew gnupg
 brew infracost
 brew jq
+brew k9s
 brew kubectx
-brew kubernetes-cli
 brew localstack
 brew markdownlint-cli
 brew nvm
@@ -45,7 +45,6 @@ tap dashlane/tap
 brew dashlane-cli
 
 tap derailed/k9s
-brew k9s
 
 tap kreuzwerker/taps
 brew m1-terraform-provider-helper
