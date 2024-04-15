@@ -5,12 +5,11 @@ tap homebrew/core
 brew aws-nuke
 brew defaultbrowser
 brew dockutil
-brew k9s
-brew kubectx
 brew helm
+brew k9s
 brew krew
+brew kubectx
 brew mackup
-brew pnpm
 brew telnet
 
 tap homebrew/cask
