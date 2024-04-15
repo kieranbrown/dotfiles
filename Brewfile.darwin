@@ -6,6 +6,7 @@ brew aws-nuke
 brew defaultbrowser
 brew dockutil
 brew mackup
+brew pnpm
 brew telnet
 
 tap homebrew/cask
@@ -21,6 +22,7 @@ cask microsoft-excel
 cask microsoft-outlook
 cask microsoft-powerpoint
 cask microsoft-word
+cask ngrok
 cask rectangle
 cask session-manager-plugin
 cask tableplus
@@ -33,6 +35,8 @@ tap homebrew/services
 tap dashlane/tap
 
 tap kreuzwerker/taps
+
+tap ngrok/ngrok
 
 tap ojford/formulae
 brew loginitems
