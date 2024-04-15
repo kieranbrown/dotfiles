@@ -23,6 +23,7 @@ cask microsoft-outlook
 cask microsoft-powerpoint
 cask microsoft-word
 cask ngrok
+cask raspberry-pi-imager
 cask rectangle
 cask session-manager-plugin
 cask tableplus
@@ -33,6 +34,8 @@ cask zoom
 tap homebrew/services
 
 tap dashlane/tap
+
+tap derailed/k9s
 
 tap kreuzwerker/taps
 
