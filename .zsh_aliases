@@ -2,4 +2,5 @@
 
 alias kctx="kubectx"
 alias kns="kubens"
+alias kustomize="kubectl kustomize"
 alias watch="watch "

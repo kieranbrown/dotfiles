@@ -5,6 +5,8 @@ tap homebrew/core
 brew aws-nuke
 brew defaultbrowser
 brew dockutil
+brew helm
+brew krew
 brew mackup
 brew telnet
 
@@ -27,6 +29,7 @@ cask session-manager-plugin
 cask tableplus
 cask visual-studio-code
 cask warp
+cask wireshark
 cask zoom
 
 tap homebrew/services
