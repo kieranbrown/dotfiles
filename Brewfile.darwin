@@ -10,6 +10,7 @@ brew k9s
 brew krew
 brew kubectx
 brew mackup
+brew pnpm
 brew telnet
 
 tap homebrew/cask
