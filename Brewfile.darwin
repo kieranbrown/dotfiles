@@ -7,6 +7,7 @@ brew corepack
 brew defaultbrowser
 brew dockutil
 brew helm
+brew jinja2-cli
 brew k9s
 brew krew
 brew kubectx
