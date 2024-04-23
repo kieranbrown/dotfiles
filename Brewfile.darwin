@@ -7,7 +7,6 @@ brew corepack
 brew defaultbrowser
 brew dockutil
 brew helm
-brew jinja2-cli
 brew k9s
 brew krew
 brew kubectx
@@ -44,6 +43,9 @@ tap dashlane/tap
 tap derailed/k9s
 
 tap kreuzwerker/taps
+
+tap nextdns/tap
+brew nextdns
 
 tap ngrok/ngrok
 
