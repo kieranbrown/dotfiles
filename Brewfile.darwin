@@ -45,6 +45,9 @@ tap derailed/k9s
 
 tap kreuzwerker/taps
 
+tap nextdns/tap
+brew nextdns
+
 tap ngrok/ngrok
 
 tap ojford/formulae
