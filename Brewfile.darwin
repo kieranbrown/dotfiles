@@ -23,9 +23,11 @@ cask google-chrome
 cask hoppscotch
 cask logi-options-plus
 cask macmediakeyforwarder
+cask microsoft-auto-update
 cask microsoft-excel
 cask microsoft-outlook
 cask microsoft-powerpoint
+cask microsoft-teams
 cask microsoft-word
 cask ngrok
 cask raspberry-pi-imager
@@ -54,3 +56,6 @@ tap ojford/formulae
 brew loginitems
 
 tap rcmdnk/file
+
+tap sst/tap
+brew sst
