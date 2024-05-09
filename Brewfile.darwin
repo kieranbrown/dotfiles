@@ -6,12 +6,15 @@ brew aws-nuke
 brew corepack
 brew defaultbrowser
 brew dockutil
+brew flyctl
 brew helm
 brew jinja2-cli
 brew k9s
 brew krew
 brew kubectx
 brew mackup
+brew nextdns
+brew pulumi
 brew telnet
 
 tap homebrew/cask
@@ -48,7 +51,6 @@ tap derailed/k9s
 tap kreuzwerker/taps
 
 tap nextdns/tap
-brew nextdns
 
 tap ngrok/ngrok
 
