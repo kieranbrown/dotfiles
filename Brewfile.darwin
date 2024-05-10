@@ -6,6 +6,7 @@ brew aws-nuke
 brew corepack
 brew defaultbrowser
 brew dockutil
+brew gitleaks
 brew helm
 brew jinja2-cli
 brew k9s
