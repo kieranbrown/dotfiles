@@ -6,7 +6,6 @@ brew aws-nuke
 brew corepack
 brew defaultbrowser
 brew dockutil
-brew flyctl
 brew gitleaks
 brew helm
 brew jinja2-cli
@@ -15,7 +14,6 @@ brew krew
 brew kubectx
 brew mackup
 brew nextdns
-brew pulumi
 brew telnet
 
 tap homebrew/cask
@@ -31,7 +29,6 @@ cask microsoft-auto-update
 cask microsoft-excel
 cask microsoft-outlook
 cask microsoft-powerpoint
-cask microsoft-teams
 cask microsoft-word
 cask ngrok
 cask raspberry-pi-imager
@@ -61,4 +58,3 @@ brew loginitems
 tap rcmdnk/file
 
 tap sst/tap
-brew sst
