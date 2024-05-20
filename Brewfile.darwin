@@ -14,8 +14,10 @@ brew k9s
 brew krew
 brew kubectx
 brew mackup
+brew mas
 brew nextdns
 brew pulumi
+brew sponge
 brew telnet
 
 tap homebrew/cask
@@ -42,6 +44,8 @@ cask visual-studio-code
 cask warp
 cask wireshark
 cask zoom
+
+tap homebrew/bundle
 
 tap homebrew/services
 

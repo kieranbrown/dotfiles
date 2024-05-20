@@ -1,10 +1,21 @@
 #!/usr/bin/env bash
 
 export AWS_SDK_LOAD_CONFIG=1
+export CHATLOOP_ROOT=$HOME/Code/github.com/chatloop
 export HOMEBREW_BREWFILE_LEAVES=1
 export HOMEBREW_BREWFILE_ON_REQUEST=1
 export HOMEBREW_BUNDLE_NO_LOCK=1
 export HOMEBREW_NO_ENV_HINTS=1
+export NVM_DIR=$HOME/.nvm
+
+# ANDROID #
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home
+export ANDROID_HOME="$CHATLOOP_ROOT/android-sdk"
+export ANDROID_SDK_ROOT="$CHATLOOP_ROOT/android-sdk"
+export PATH=$ANDROID_HOME/emulator:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
+# END ANDROID #
 
 case "$(uname -m)" in
   aarch64* | arm64*)
