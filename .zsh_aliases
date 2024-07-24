@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+alias docker-compose="docker compose"
 alias kctx="kubectx"
 alias kns="kubens"
 alias kustomize="kubectl kustomize"
