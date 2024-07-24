@@ -2,22 +2,11 @@
 # tap repositories and their packages
 
 tap homebrew/core
-brew aws-nuke
-brew corepack
 brew defaultbrowser
 brew dockutil
-brew flyctl
-brew gitleaks
-brew helm
-brew jinja2-cli
-brew k9s
-brew krew
-brew kubectx
 brew mackup
 brew mas
 brew nextdns
-brew pulumi
-brew sponge
 brew telnet
 
 tap homebrew/cask
@@ -61,8 +50,3 @@ tap ngrok/ngrok
 
 tap ojford/formulae
 brew loginitems
-
-tap rcmdnk/file
-
-tap sst/tap
-brew sst

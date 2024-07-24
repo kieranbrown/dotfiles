@@ -30,7 +30,7 @@ for filename in .ssh/id_rsa .ssh/id_rsa.pub; do
   chmod 600 "${HOME}/${filename}"
 done
 
-for filename in .gitconfig .gitconfig.chatloop .hushlogin .vimrc .zsh_aliases .zsh_exports .zshrc; do
+for filename in .gitconfig .gitconfig.chatloop .gitconfig.ephemeral .hushlogin .vimrc .zsh_aliases .zsh_exports .zshrc; do
   echo "Symlinking ${filename}"
   symlink_file "${filename}"
 done
