@@ -44,9 +44,15 @@ tap derailed/k9s
 
 tap kreuzwerker/taps
 
+tap minamijoyo/hcledit
+
 tap nextdns/tap
 
 tap ngrok/ngrok
 
 tap ojford/formulae
 brew loginitems
+
+tap rcmdnk/file
+
+tap sst/tap
