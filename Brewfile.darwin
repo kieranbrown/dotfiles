@@ -44,8 +44,6 @@ tap derailed/k9s
 
 tap kreuzwerker/taps
 
-tap minamijoyo/hcledit
-
 tap nextdns/tap
 
 tap ngrok/ngrok
