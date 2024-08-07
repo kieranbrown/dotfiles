@@ -1,7 +1,5 @@
 
-# tap repositories and their packages
-
-tap homebrew/core
+# Other Homebrew packages
 brew defaultbrowser
 brew dockutil
 brew mackup
@@ -9,7 +7,7 @@ brew mas
 brew nextdns
 brew telnet
 
-tap homebrew/cask
+# Other Cask applications
 cask alfred
 cask arc
 cask docker
@@ -24,7 +22,6 @@ cask microsoft-outlook
 cask microsoft-powerpoint
 cask microsoft-teams
 cask microsoft-word
-cask ngrok
 cask raspberry-pi-imager
 cask rectangle
 cask session-manager-plugin
@@ -34,21 +31,8 @@ cask warp
 cask wireshark
 cask zoom
 
-tap homebrew/bundle
-
-tap homebrew/services
-
-tap dashlane/tap
-
-tap derailed/k9s
-
-tap kreuzwerker/taps
-
-tap nextdns/tap
-
-tap ngrok/ngrok
-
 tap ojford/formulae
 brew loginitems
 
-tap rcmdnk/file
+tap nextdns/tap
+brew nextdns
