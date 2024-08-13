@@ -1,0 +1,12 @@
+
+# tap repositories and their packages
+
+tap homebrew/core
+
+tap dashlane/tap
+
+tap kreuzwerker/taps
+
+tap rcmdnk/file
+
+tap sst/tap
