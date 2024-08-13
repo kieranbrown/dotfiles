@@ -8,3 +8,6 @@ tap dashlane/tap
 tap kreuzwerker/taps
 
 tap rcmdnk/file
+
+tap sst/tap
+brew sst
