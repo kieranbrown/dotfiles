@@ -58,6 +58,9 @@ brew m1-terraform-provider-helper
 tap rcmdnk/file
 brew brew-file
 
+tap sst/tap
+brew sst
+
 # Main file
 main ./Brewfile.$PLATFORM
 
