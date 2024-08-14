@@ -25,6 +25,7 @@ brew helm
 brew infracost
 brew jinja2-cli
 brew jq
+brew k9s
 brew krew
 brew kubectx
 brew localstack
@@ -53,7 +54,6 @@ tap dashlane/tap
 brew dashlane-cli
 
 tap derailed/k9s
-brew k9s
 
 tap kreuzwerker/taps
 brew m1-terraform-provider-helper
