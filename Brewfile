@@ -25,7 +25,6 @@ brew helm
 brew infracost
 brew jinja2-cli
 brew jq
-brew k9s
 brew krew
 brew kubectx
 brew localstack
