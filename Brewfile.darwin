@@ -46,9 +46,6 @@ tap kreuzwerker/taps
 
 tap minamijoyo/hcledit
 
-tap mongodb/brew
-brew mongodb-database-tools
-
 tap nextdns/tap
 
 tap ngrok/ngrok
@@ -59,6 +56,3 @@ brew loginitems
 tap rcmdnk/file
 
 tap sst/tap
-
-# App Store applications
-appstore 803453959 Slack (4.39.95)

@@ -21,4 +21,8 @@ cask obsidian
 cask slack
 
 # App Store applications
+appstore 462058435 Microsoft Excel (16.88)
+appstore 462054704 Microsoft Word (16.88)
+appstore 985367838 Microsoft Outlook (16.88)
+appstore 803453959 Slack (4.39.95)
 appstore 497799835 Xcode (15.4)

@@ -5,8 +5,6 @@ tap homebrew/core
 
 tap dashlane/tap
 
-tap derailed/k9s
-
 tap kreuzwerker/taps
 
 tap rcmdnk/file
