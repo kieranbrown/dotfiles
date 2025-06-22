@@ -3,15 +3,13 @@ version: 2
 updates:
   - package-ecosystem: github-actions
     directories:
-      - /
-      - /.github/actions/**
-    groups:
-      gh-actions:
-        update-types:
-          - minor
-          - patch
+      - "/"
+      - "/.github/actions/**"
     schedule:
       interval: weekly
       day: monday
-      time: "08:00"
-      timezone: Europe/London
+    groups:
+      gha:
+        update-types:
+          - minor
+          - patch
